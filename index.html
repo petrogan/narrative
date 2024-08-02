@@ -3,21 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Визитка</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Нарративный дизайн</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Lora', serif;
+            text-align: center;
+            background-color: #f5f5f5;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            font-size: 2em;
+            margin: 0;
+        }
+        .subtitle {
+            font-size: 2.4em; /* 20% больше, чем h1 */
+            margin: 20px 0 60px 0; /* тройной отступ (3 * 20px) */
+        }
+        .section-title {
+            margin: 0;
+        }
+        .projects,
+        .contacts {
+            margin: 10px 0;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
         <div class="card">
             <h1>Пётр Гаськов</h1>
             <p class="subtitle"><strong><em>нарративный дизайнер</em></strong></p>
-            <h2><strong>проекты:</strong></h2>
+            <h2 class="section-title"><strong>проекты:</strong></h2>
             <p class="projects">
                 <a href="https://store.steampowered.com/app/1587540/Anvil_Saga/" target="_blank">Anvil Saga</a> | 
                 <a href="https://shadowfight.com/" target="_blank">Shadow Fight 4: Arena</a>
             </p>
-            <h2><strong>контакты:</strong></h2>
+            <h2 class="section-title"><strong>контакты:</strong></h2>
             <p class="contacts">
                 <a href="https://t.me/petrgv" target="_blank">Telegram</a> | 
                 <a href="mailto:petrgaskov@gmail.com" target="_blank">Почта</a>
